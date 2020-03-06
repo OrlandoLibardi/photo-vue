@@ -29,7 +29,6 @@ export default {
             this.messageConfirmText = btn != undefined ? btn : this.messageConfirmText;
         },
         hidden() {
-
             this.clear();
         },
         clear() {
