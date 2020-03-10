@@ -31,7 +31,7 @@ export default {
             this.$emit("clear");
         },
         setAccepts() {
-            let accept = this.accept.replace("", "");
+            let accept = this.accept.replace(" ", "");
             return (accept.indexOf(",") > -1) ? accept.split(",") : [accept];
         },
         onChange(e) {
