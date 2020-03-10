@@ -31,7 +31,8 @@ export default {
             this.$emit("clear");
         },
         setAccepts() {
-            return (this.accept.indexOf(",") > -1) ? this.accept.split(",") : [this.accept];
+            let accept = this.accept.replace("", "");
+            return (accept.indexOf(",") > -1) ? accept.split(",") : [accept];
         },
         onChange(e) {
             const files = e.target.files || e.dataTransfer.files;
